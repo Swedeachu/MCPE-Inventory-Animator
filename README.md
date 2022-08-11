@@ -2,7 +2,6 @@
 Create Animated Inventories from Gif Files (Bedrock Edition only)
 
 ![example](https://user-images.githubusercontent.com/63020914/184106224-eddd3236-c07c-4de4-9d8b-020231f2077d.gif)
-![The Tool](https://user-images.githubusercontent.com/63020914/184110154-2e839ac2-200f-4a2f-bd24-f2ca0cb3bffb.PNG)
 
 # How to use
 Drag a gif file into the "select gif file" area. The same can be done for any png if you wish to have an inventory overlay, make sure to have the box checked. Finally, press the large "create animated inventory button". The mcpack will be in the same folder as the Inventory Animator Jar.
