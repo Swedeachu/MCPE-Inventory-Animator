@@ -1,0 +1,76 @@
+{
+  "crafting_screen": {
+    "$player_inventory_variant": "crafting.player_inventory"
+  },
+
+  "inventory_screen": {
+    "$player_inventory_variant": "CrisXolt_anm_inventory_screen.player_inventory"
+  },
+
+  "recipe_inventory_screen_content/content_stack_panel": {
+    "controls": [
+      {
+        "recipe_book@crafting.recipe_book": {
+          "size": [ "fill", "100%" ],
+          "bindings": [
+            {
+              "binding_type": "global",
+              "binding_name": "(not #is_survival_layout)",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "center_fold@crafting.center_fold": {
+          "size": [ 4, 166 ],
+          "bindings": [
+            {
+              "binding_type": "global",
+              "binding_name": "#is_recipe_book_layout",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "survival_padding": {
+          "type": "panel",
+          "size": [ 75, "100%" ],
+          "bindings": [
+            {
+              "binding_type": "global",
+              "binding_name": "#is_survival_layout",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "player_inventory@$player_inventory_variant": {
+          "bindings": [
+            {
+              "binding_type": "global",
+              "binding_name": "(not #is_creative_layout)",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "toolbar_anchor": {
+          "type": "panel",
+          "size": [ 0, "100%" ],
+          "controls": [
+            {
+              "toolbar_panel@crafting.toolbar_panel": {
+                "anchor_from": "top_right",
+                "anchor_to": "bottom_right"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

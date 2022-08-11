@@ -1,0 +1,15 @@
+{
+  "player_inventory": {
+    "controls": [
+      { "inventory_bg_panel@CrisXolt_anm_inventory_bg.inventory_bg_panel": { "layer": 1 } },
+      { "inventory_panel_top_half@inventory_dx.inventory_panel_top_half": { "layer": 11 } },
+      {
+        "inventory_panel_bottom_half@common_dx.inventory_panel_bottom_half": {
+          "layer": 11,
+          "$with_label": false,
+          "$button_ref": "crafting.inventory_container_slot_button"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+/*File made by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "namespace": "CrisXolt_anm_inventory_bg",
+
+  "inventory_bg_panel": {
+    "type": "panel",
+    "size": [ 176, 166 ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      { "inv_bg_base@CrisXolt_anm_inv_bg_base.inv_bg_base": { } }
+    ]
+  },
+
+  "inventory_bg_old_panel": {
+    "type": "panel",
+    "size": [ 176, 166 ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      { "inv_bg_base_old@CrisXolt_anm_inv_bg_base.inv_bg_base_old": { } }
+    ]
+  },
+
+  "uv_base": {
+    "anim_type": "uv",
+    "duration": 0.06,
+    "next": "$next_frame", 
+    "from": "$uv_frame",
+    "to": "$uv_frame"
+  }
+}

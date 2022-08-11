@@ -1,0 +1,91 @@
+/*File made by @CrisXolt.
+//(c) Don't use any code design without permission!*/
+{
+  "namespace": "CrisXolt_anm_inv_bg_base",
+
+  "inv_bg_base_old@CrisXolt_anm_inv_bg_base.inv_bg_base": {
+    "$overlay_texture": "textures/animated_ui/inventory_bg/inventory_overlay_old"
+  },
+
+  "inv_bg_base": {
+    "type": "panel",
+    "size": [ 176, 166 ],
+    "$overlay_texture": "textures/animated_ui/inventory_bg/inventory_overlay",
+    "controls": [
+      {
+        "overlay": {
+          "type": "image",
+          "size": [ 176, 166 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "$overlay_texture",
+          "layer": 2
+        }
+      },
+      {
+        "inventory_texture": {
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "texture": "textures/animated_ui/inventory_bg/inventory_vertical_flipbook",
+          "uv": "@CrisXolt_anm_inv_bg_base.01",
+          "uv_size": "$inventory_base_resolution",
+          "size": [ 176, 166 ]
+        }
+      }
+    ]
+  },
+
+  /*//// Inventory Bar Frames ////*/
+
+  "inventory_uv_base@CrisXolt_anm_inventory_bg.uv_base": {
+    "duration": "$inventory_duration_per_frame",
+    "variables": [
+      {
+        "requires": "$max_inventory_uv_frames",
+        "$next_frame": "@CrisXolt_anm_inv_bg_base.01"
+      }
+    ]
+  },
+    
+  "01@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 0     ], "$max_inventory_uv_frames": "($total_inventory_frames = '01_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.02" },
+  "02@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 332   ], "$max_inventory_uv_frames": "($total_inventory_frames = '02_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.03" },
+  "03@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 664   ], "$max_inventory_uv_frames": "($total_inventory_frames = '03_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.04" },
+  "04@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 996   ], "$max_inventory_uv_frames": "($total_inventory_frames = '04_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.05" },
+  "05@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 1328  ], "$max_inventory_uv_frames": "($total_inventory_frames = '05_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.06" },
+  "06@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 1660  ], "$max_inventory_uv_frames": "($total_inventory_frames = '06_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.07" },
+  "07@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 1992  ], "$max_inventory_uv_frames": "($total_inventory_frames = '07_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.08" },
+  "08@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 2324  ], "$max_inventory_uv_frames": "($total_inventory_frames = '08_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.09" },
+  "09@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 2656  ], "$max_inventory_uv_frames": "($total_inventory_frames = '09_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.10" },
+  "10@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 2988  ], "$max_inventory_uv_frames": "($total_inventory_frames = '10_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.11" },
+  "11@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 3320  ], "$max_inventory_uv_frames": "($total_inventory_frames = '11_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.12" },
+  "12@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 3652  ], "$max_inventory_uv_frames": "($total_inventory_frames = '12_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.13" },
+  "13@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 3984  ], "$max_inventory_uv_frames": "($total_inventory_frames = '13_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.14" },
+  "14@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 4316  ], "$max_inventory_uv_frames": "($total_inventory_frames = '14_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.15" },
+  "15@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 4648  ], "$max_inventory_uv_frames": "($total_inventory_frames = '15_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.16" },
+  "16@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 4980  ], "$max_inventory_uv_frames": "($total_inventory_frames = '16_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.17" },
+  "17@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 5312  ], "$max_inventory_uv_frames": "($total_inventory_frames = '17_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.18" },
+  "18@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 5644  ], "$max_inventory_uv_frames": "($total_inventory_frames = '18_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.19" },
+  "19@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 5976  ], "$max_inventory_uv_frames": "($total_inventory_frames = '19_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.20" },
+  "20@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 6308  ], "$max_inventory_uv_frames": "($total_inventory_frames = '20_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.21" },
+  "21@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 6640  ], "$max_inventory_uv_frames": "($total_inventory_frames = '21_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.22" },
+  "22@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 6972  ], "$max_inventory_uv_frames": "($total_inventory_frames = '22_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.23" },
+  "23@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 7304  ], "$max_inventory_uv_frames": "($total_inventory_frames = '23_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.24" },
+  "24@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 7636  ], "$max_inventory_uv_frames": "($total_inventory_frames = '24_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.25" },
+  "25@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 7968  ], "$max_inventory_uv_frames": "($total_inventory_frames = '25_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.26" },
+  "26@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 8300  ], "$max_inventory_uv_frames": "($total_inventory_frames = '26_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.27" },
+  "27@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 8632  ], "$max_inventory_uv_frames": "($total_inventory_frames = '27_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.28" },
+  "28@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 8964  ], "$max_inventory_uv_frames": "($total_inventory_frames = '28_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.29" },
+  "29@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 9296  ], "$max_inventory_uv_frames": "($total_inventory_frames = '29_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.30" },
+  "30@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 9628  ], "$max_inventory_uv_frames": "($total_inventory_frames = '30_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.31" },
+  "31@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 9960  ], "$max_inventory_uv_frames": "($total_inventory_frames = '31_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.32" },
+  "32@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 10292 ], "$max_inventory_uv_frames": "($total_inventory_frames = '32_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.33" },
+  "33@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 10624 ], "$max_inventory_uv_frames": "($total_inventory_frames = '33_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.34" },
+  "34@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 10956 ], "$max_inventory_uv_frames": "($total_inventory_frames = '34_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.35" },
+  "35@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 11288 ], "$max_inventory_uv_frames": "($total_inventory_frames = '35_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.36" },
+  "36@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 11620 ], "$max_inventory_uv_frames": "($total_inventory_frames = '36_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.37" },
+  "37@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 11952 ], "$max_inventory_uv_frames": "($total_inventory_frames = '37_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.38" },
+  "38@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 12284 ], "$max_inventory_uv_frames": "($total_inventory_frames = '38_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.39" },
+  "39@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 12616 ], "$max_inventory_uv_frames": "($total_inventory_frames = '39_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.40" },
+  "40@CrisXolt_anm_inv_bg_base.inventory_uv_base": { "$uv_frame": [ 0, 12948 ], "$max_inventory_uv_frames": "($total_inventory_frames = '40_frames')", "$next_frame": "@CrisXolt_anm_inv_bg_base.01" }
+}

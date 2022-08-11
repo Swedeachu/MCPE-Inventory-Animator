@@ -1,0 +1,10 @@
+/*  (c) CrisXolt. Don't use any code design without permission!  */
+{
+  /*  Alphabetical order please (in each group) :)  */
+  "ui_defs": [
+    ////////*/ Animated Sections /*////////
+    "uidx/animated_ui/modified_inventory_screen.uidx",
+    "uidx/animated_ui/custom_anim_inventory_bg.uidx",
+    "uidx/animated_ui/inventory_bg_base.uidx"
+  ]
+}
