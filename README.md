@@ -13,6 +13,8 @@ PolrFlare (UI Pack Code + Other Help) : https://www.youtube.com/channel/UCybsREj
 
 # How to use
 Drag a gif file into the "select gif file" area. The same can be done for any png if you wish to have an inventory overlay, make sure to have the box checked. Finally, press the large "create animated inventory button". The mcpack will be in the same folder as the Inventory Animator Jar.
+<br>
+<br>
 ![rsz_toolio](https://user-images.githubusercontent.com/63020914/184111544-6c17f947-5ab0-4577-830f-7c5842d25e1f.png)
 
 # The Limits
