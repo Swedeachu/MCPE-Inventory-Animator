@@ -131,6 +131,7 @@ public class MCPE {
 			File zippedPack = new File(pack.getAbsolutePath() + ".zip");
 			zippedPack.renameTo(new File(pack.getParentFile() + "\\" + name + ".mcpack"));
 			FileUtils.forceDelete(pack);
+			JOptionPane.showMessageDialog(null, "Pack Created: " + pack.getParentFile() + "\\" + name + ".mcpack", "Success!", JOptionPane.INFORMATION_MESSAGE);
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, e.getMessage(), "Error!", JOptionPane.ERROR_MESSAGE);
 			e.printStackTrace();
