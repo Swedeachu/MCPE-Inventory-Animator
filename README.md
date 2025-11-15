@@ -22,8 +22,8 @@ If you get the error message for "4096 out of bounds" or "I/O error reading imag
 Highly reccomend using square aspect ratio gifs for best visual results. Portrait or super stretched landscape images might come out as super low quality or zoomed in.
 
 # Developers:
-Swimfan72 (Tool Programmer)                : https://www.youtube.com/c/Swimfan72
+Swedeachu (Tool Programmer)                
 <br>
-CrisXolt (UI Pack Code + Original Inventor)  : https://www.youtube.com/channel/UCj9Rxb1zbNY1zFXFyATJiJQ
+CrisXolt (UI Pack Code + Original Inventor)  
 <br>
-PolrFlare (UI Pack Code + Other Help) : https://www.youtube.com/channel/UCybsREjkjcOZ_yNl4H7gbFA
+PolrFlare (UI Pack Code + Other Help) 
